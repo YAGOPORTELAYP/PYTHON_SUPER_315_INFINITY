@@ -1,8 +1,0 @@
-# FAÇA UMA FUNÇÃO QUE RECEBE UMA PALAVRA QUALQUER E RETORNE ESSA MESMA PALAVRA TODA EM MAIÚSCULO
-
-# FAÇA UM PROGRAMA QUE PEDE PARA O USUÁRIO DIGITAR UMA PALAVRA QUALQUER
-# E MOSTRE NA TELA ESSA PALAVRA TODA EM MAÍUSCULO USANDO A FUNÇÃO QUE VOCÊ CRIOU.
-def word (palavra:str):
-    return palavra.upper()
-palavra = str(input("Digite uma palavra qualquer:"))
-print(word(palavra))
