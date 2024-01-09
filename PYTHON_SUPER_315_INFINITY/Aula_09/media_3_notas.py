@@ -12,6 +12,8 @@ def media():
         resp.configure(text=(f"Você foi Reprovado"),bg="red",fg="white")
     elif med == 10:
         resp.configure(text=(f"Aprovado com distinção"),bg="blue",fg="white")
+    else:
+        resp.configure(text=(f"Nota {med} é Inválida",bg="gray",fg="white"))
 
 n1_label = Label(text="Digite a primeira nota:").pack()
 n1 = Entry()
