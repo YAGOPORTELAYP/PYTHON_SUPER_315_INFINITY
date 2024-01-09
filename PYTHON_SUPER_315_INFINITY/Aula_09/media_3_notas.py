@@ -6,11 +6,11 @@ box.geometry("300x300")
 
 def media():
     med = (float(n1.get()) + float(n2.get()) + float(n3.get()))/3
-    if med >= 7:
+    if med >= 7 and med < 10:
         resp.configure(text=(f"Você foi aprovado"),bg="green",fg="white")
-    if med < 7:
+    elif med < 7 and med >= 0:
         resp.configure(text=(f"Você foi Reprovado"),bg="red",fg="white")
-    if med == 10:
+    elif med == 10:
         resp.configure(text=(f"Aprovado com distinção"),bg="blue",fg="white")
 
 n1_label = Label(text="Digite a primeira nota:").pack()
